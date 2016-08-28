@@ -16,11 +16,23 @@ TARGET = collections
 
 all: $(TARGET) 
 
-$(TARGET): hash_map.o
-	$(CC) $(CFLAGS) -o collections main.c hash_map.o
+$(TARGET): hash_map.o linked_list.o allocator.o comparer.o data_handler.o
+	$(CC) $(CFLAGS) -o collections main.c hash_map.o linked_list.o allocator.o comparer.o data_handler.o
 
 hash_map.o: hash_map/hash_map.c hash_map/hash_map.h
 	$(CC) $(CFLAGS) -c hash_map/hash_map.c 
 
+linked_list.o: linked_list/linked_list.c linked_list/linked_list.h 
+	$(CC) $(CFLAGS) -c linked_list/linked_list.c 
+
+allocator.o: common/allocator.c common/allocator.h common/types.h
+	$(CC) $(CFLAGS) -c common/allocator.c
+
+comparer.o: common/comparer.c common/comparer.h 
+	$(CC) $(CFLAGS) -c common/comparer.c 
+
+data_handler.o: common/data_handler.c common/data_handler.h
+	$(CC) $(CFLAGS) -c common/data_handler.c
+
 clean: 
-	$(RM) $(TARGET) hash_map.o
+	$(RM) $(TARGET) hash_map.o linked_list.o allocator.o comparer.o data_handler.o
