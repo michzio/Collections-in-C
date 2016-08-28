@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/hash_map/hash_map.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hash_map/hash_map.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/test_hash_map.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/test_hash_map.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
