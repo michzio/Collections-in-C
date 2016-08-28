@@ -2,6 +2,7 @@
 // Created by Michal Ziobro on 28/08/2016.
 //
 #include "hash_map.h"
+#include "../linked_list/linked_list.h"
 
 #define DEFAULT_HASH_MAP_SIZE 100
 
