@@ -3,10 +3,11 @@
 //
 #include <stdlib.h>
 #include <assert.h>
+#include <string.h>
 #include "hash_map.h"
 #include "../linked_list/linked_list.h"
 
-#define DEFAULT_HASH_MAP_SIZE 100
+#define DEFAULT_HASH_MAP_SIZE 101
 
 struct hash_map {
     linked_list_t **table_of_lists;
@@ -18,6 +19,9 @@ struct hash_map {
 
     // key comparer
     compare_func_t key_cmp_func;
+
+    // hash function implementation
+    hash_func_t hash_function;
 };
 
 struct key_value_pair {
@@ -28,10 +32,38 @@ struct key_value_pair {
 };
 typedef struct key_value_pair key_value_pair_t;
 
-static int hash_function(void *key) {
-    // TODO
+// hash functions - calculate hash for given key of given type
+int str_hash_func(hash_map_t *hash_map, void *key) {
+
+    unsigned int h = 0;
+    char *str_key = (char *) key;
+    size_t str_key_len = strlen(key);
+
+    for(int i=0; i < str_key_len; i++) {
+        h += str_key[i];
+    }
+
+    // using hash table mask = hash table size - 1
+    // it is used instead of modulo operation ( % hash table size )
+    // as AND binary operation is faster than modulo operation
+    return (h * 1049) & (hash_map->size - 1);
 }
 
+int int_ptr_hash_func(hash_map_t *hash_map, void *key) {
+
+    unsigned int h = 0;
+    int int_key = *((int *) key);
+
+    h = abs(int_key);
+
+    // using hash table mask = hash table size - 1
+    // it is used instead of modulo operation ( % hash table size )
+    // as AND binary operation is faster than modulo operation
+    return (h * 1049) & (hash_map->size -1);
+
+}
+
+// helper function
 static linked_node_t *find_node_with_key(const linked_list_t *list, const void *key, compare_func_t key_cmp_func) {
 
     // go through the linked list to find the node containing key value pair with given key
@@ -76,7 +108,7 @@ void hash_map_init(hash_map_t **hash_map, allocator_t *key_allocator, allocator_
 void hash_map_put(hash_map_t *hash_map, void *key, size_t key_size, void *val, size_t val_size) {
 
     // calculate hash table index
-    int idx = hash_function(key);
+    int idx = hash_map->hash_function(hash_map, key);
     // get list for given index
     linked_list_t *list = hash_map->table_of_lists[idx];
     // find the node containing key value pair with given key
@@ -132,7 +164,7 @@ void hash_map_put(hash_map_t *hash_map, void *key, size_t key_size, void *val, s
 void *hash_map_get(hash_map_t *hash_map, void *key, size_t *val_size) {
 
     // calculate hash table index
-    int idx = hash_function(key);
+    int idx = hash_map->hash_function(hash_map, key);
     // get list for given index
     linked_list_t *list = hash_map->table_of_lists[idx];
     // find the node containing key value pair with given key
@@ -153,7 +185,7 @@ void *hash_map_get(hash_map_t *hash_map, void *key, size_t *val_size) {
 result_t hash_map_remove(hash_map_t *hash_map, void *key) {
 
     // calculate hash table index
-    int idx = hash_function(key);
+    int idx = hash_map->hash_function(hash_map, key);
     // get list for given index
     linked_list_t *list = hash_map->table_of_lists[idx];
     // find the node containing key value pair with given key
