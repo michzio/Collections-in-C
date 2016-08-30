@@ -12,21 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07f0ea16-04e5-485f-ae6a-873e1c1b65ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_linked_list.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_linked_list.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections" afterPath="$PROJECT_DIR$/collections" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections.dSYM/Contents/Resources/DWARF/collections" afterPath="$PROJECT_DIR$/collections.dSYM/Contents/Resources/DWARF/collections" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/collections.iml" afterPath="$PROJECT_DIR$/.idea/collections.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/data_handler.c" afterPath="$PROJECT_DIR$/common/data_handler.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hash_map/hash_map.c" afterPath="$PROJECT_DIR$/hash_map/hash_map.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hash_map/hash_map.h" afterPath="$PROJECT_DIR$/hash_map/hash_map.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linked_list/linked_list.c" afterPath="$PROJECT_DIR$/linked_list/linked_list.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linked_list/linked_list.h" afterPath="$PROJECT_DIR$/linked_list/linked_list.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make.txt" afterPath="$PROJECT_DIR$/make.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_hash_map.h" afterPath="$PROJECT_DIR$/test/test_hash_map.h" />
     </list>
     <ignored path="collections.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +48,8 @@
       <file leaf-file-name="hash_map.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hash_map/hash_map.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="55" />
+            <state relative-caret-position="255">
+              <caret line="17" column="129" selection-start-line="17" selection-start-column="129" selection-end-line="17" selection-end-column="129" />
               <folding>
                 <element signature="e#113#145#0" expanded="true" />
               </folding>
@@ -72,11 +60,21 @@
       <file leaf-file-name="hash_map.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hash_map/hash_map.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+            <state relative-caret-position="840">
+              <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
               <folding>
                 <element signature="e#49#68#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comparer.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/comparer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -464,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472394655571</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="linked_list testes,&#10;hash_map - initializer, destructor implemented">
+      <created>1472574328970</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1472574328970</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -508,7 +513,8 @@
     <MESSAGE value="linked_list first draft &#10;hash_map first draft" />
     <MESSAGE value="linked_list skeleton code" />
     <MESSAGE value="linked_list implemented, but not tested yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="linked_list implemented, but not tested yet" />
+    <MESSAGE value="linked_list testes,&#10;hash_map - initializer, destructor implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="linked_list testes,&#10;hash_map - initializer, destructor implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,14 +532,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/allocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/comparer.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -578,7 +576,7 @@
         <state relative-caret-position="315">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="75" />
           <folding>
-            <element signature="e#263#295#0" expanded="true" />
+            <element signature="e#263#295#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,6 +627,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/allocator.c">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-666">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/comparer.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/comparer.h">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -637,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hash_map/hash_map.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="255">
+          <caret line="17" column="129" selection-start-line="17" selection-start-column="129" selection-end-line="17" selection-end-column="129" />
           <folding>
             <element signature="e#113#145#0" expanded="true" />
           </folding>
@@ -647,8 +661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hash_map/hash_map.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
+        <state relative-caret-position="840">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
           <folding>
             <element signature="e#49#68#0" expanded="true" />
           </folding>
