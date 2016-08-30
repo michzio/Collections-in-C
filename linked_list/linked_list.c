@@ -99,15 +99,27 @@ result_t linked_list_remove_node(linked_list_t *list, linked_node_t *old_node) {
         return FAILURE;
     }
 
+    // if node to delete is at the head
+    if(list->head == old_node) {
+        // delete old node at the head
+        list->head = list->head->next;
+        linked_node_free(list, old_node);
+        return SUCCESS;
+    }
+
+    // if node to delete isn't at the head, traverse the list to find it
     linked_node_t *prev_node = list->head;
     while( prev_node != NULL ) {
         if(prev_node->next == old_node) {
             // delete old node
             prev_node->next = old_node->next;
+            linked_node_free(list, old_node);
             return SUCCESS;
         }
+        prev_node = prev_node->next;
     }
 
+    // if node to delete not found in the list
     fprintf(stderr, "Couldn't find old node: %p to delete in the list: %p!\n", old_node, list);
     return FAILURE;
 }
@@ -120,7 +132,11 @@ result_t linked_list_pop_front(linked_list_t *list) {
     return linked_list_remove_node(list, list->head);
 }
 
-void linked_list_list_free(linked_list_t *list) {
+linked_node_t *linked_list_next(linked_node_t *node) {
+    return node->next;
+}
+
+void linked_list_free(linked_list_t *list) {
 
     // deallocate nodes
     linked_node_t *node = list->head;
@@ -174,6 +190,10 @@ void linked_node_wrap_data(linked_list_t *list, linked_node_t *node, void *data,
         // when client is owning data only store pointer to it
         node->data = data;
     }
+}
+
+void linked_node_handle(linked_node_t *node, data_handler_t handle_data) {
+    handle_data(node->data, node->data_size);
 }
 
 /**

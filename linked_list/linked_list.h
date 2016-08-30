@@ -33,12 +33,14 @@ void linked_list_push_node_front(linked_list_t *list, linked_node_t *new_node);
 result_t linked_list_remove_node(linked_list_t *list, linked_node_t *old_node);
 linked_node_t *linked_list_front(const linked_list_t *list);
 result_t linked_list_pop_front(linked_list_t *list);
+linked_node_t *linked_list_next(linked_node_t *node);
 void linked_list_free(linked_list_t *list);
 
 // node operations
 void linked_node_init(linked_node_t **node);
 void *linked_node_unwrap_data(linked_node_t *node, size_t *data_size);
 void linked_node_wrap_data(linked_list_t *list, linked_node_t *node, void *data, size_t data_size);
+void linked_node_handle(linked_node_t *node, data_handler_t data_handler);
 void linked_node_free(linked_list_t *list, linked_node_t *node);
 
 #endif //COLLECTIONS_LINKED_LIST_H

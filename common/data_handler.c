@@ -15,5 +15,5 @@ void print_string_data_handler(void *data, size_t data_size) {
 
 void free_data_handler(void *data, size_t data_size) {
 
-    free( (char *) data);
+    free(data);
 }
