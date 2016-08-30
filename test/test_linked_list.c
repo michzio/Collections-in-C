@@ -218,7 +218,7 @@ static void test_pop_front_with_allocator(void) {
     test_clean_with_allocator();
 }
 
-static void test_pop_front_all() {
+static void test_pop_front_all(void) {
     test_create();
     while(linked_list_front(list)) {
         free(linked_node_unwrap_data(linked_list_front(list), NULL));
@@ -229,7 +229,7 @@ static void test_pop_front_all() {
     test_clean();
 }
 
-static void test_pop_front_all_with_allocator() {
+static void test_pop_front_all_with_allocator(void) {
     test_create_with_allocator();
     while(linked_list_front(list)) {
         linked_list_pop_front(list);
@@ -239,7 +239,7 @@ static void test_pop_front_all_with_allocator() {
     test_clean_with_allocator();
 }
 
-test_next() {
+static void test_next(void) {
     test_create();
     printf("%s: ", __func__);
     for(linked_node_t *node = linked_list_front(list); node != NULL; node = linked_list_next(node)) {
@@ -249,7 +249,7 @@ test_next() {
     test_clean();
 }
 
-test_next_with_allocator() {
+static void test_next_with_allocator(void) {
     test_create_with_allocator();
     printf("%s: ", __func__);
     for(linked_node_t *node = linked_list_front(list); node != NULL; node = linked_list_next(node)) {

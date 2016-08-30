@@ -131,10 +131,59 @@ void hash_map_put(hash_map_t *hash_map, void *key, size_t key_size, void *val, s
 
 void *hash_map_get(hash_map_t *hash_map, void *key, size_t *val_size) {
 
+    // calculate hash table index
+    int idx = hash_function(key);
+    // get list for given index
+    linked_list_t *list = hash_map->table_of_lists[idx];
+    // find the node containing key value pair with given key
+    linked_node_t *found_node = find_node_with_key(list, key, hash_map->key_cmp_func);
+
+    if(found_node != NULL) {
+        // value found for given key
+        key_value_pair_t *kvp = linked_node_unwrap_data(found_node, NULL);
+        *val_size = kvp->value_size;
+        return kvp->value;
+    }
+
+    // else nothing found for given key
+    *val_size = 0;
+    return NULL;
 }
 
-void *hash_map_remove(hash_map_t *hash_map, void *key) {
+result_t hash_map_remove(hash_map_t *hash_map, void *key) {
 
+    // calculate hash table index
+    int idx = hash_function(key);
+    // get list for given index
+    linked_list_t *list = hash_map->table_of_lists[idx];
+    // find the node containing key value pair with given key
+    linked_node_t *found_node = find_node_with_key(list, key, hash_map->key_cmp_func);
+
+    if(found_node != NULL) {
+        // remove key value pair from hash map
+        key_value_pair_t *kvp = linked_node_unwrap_data(found_node, NULL);
+
+        // deallocate key and value placed inside key_value_pair if needed
+        if(hash_map->key_allocator != NULL) {
+            deallocate_handler_t key_deallocate = allocator_deallocate(hash_map->key_allocator);
+            key_deallocate(&kvp->key);
+        }
+        if(hash_map->value_allocator != NULL) {
+            deallocate_handler_t value_deallocate = allocator_deallocate(hash_map->value_allocator);
+            value_deallocate(&kvp->value);
+        }
+
+        // deallocate key_value_pair placed inside found node
+        free(kvp);
+
+        // remove node found for given key from the list
+        linked_list_remove_node(list, found_node);
+
+        return SUCCESS;
+    }
+
+    // else nothing found for given key
+    return FAILURE;
 }
 
 void hash_map_free(hash_map_t *hash_map) {

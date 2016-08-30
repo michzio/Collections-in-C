@@ -18,7 +18,7 @@ void hash_map_init_default(hash_map_t **hash_map, allocator_t *key_allocator, al
 void hash_map_init(hash_map_t **hash_map, allocator_t *key_allocator, allocator_t *value_allocator, compare_func_t key_cmp_func, size_t size);
 void hash_map_put(hash_map_t *hash_map, void *key, size_t key_size, void *val, size_t val_size);
 void *hash_map_get(hash_map_t *hash_map, void *key, size_t *val_size);
-void *hash_map_remove(hash_map_t *hash_map, void *key);
+result_t hash_map_remove(hash_map_t *hash_map, void *key);
 void hash_map_free(hash_map_t *hash_map);
 
 #endif //COLLECTIONS_HASH_MAP_H
