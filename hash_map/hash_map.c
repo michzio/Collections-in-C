@@ -37,7 +37,7 @@ int str_hash_func(hash_map_t *hash_map, void *key) {
 
     unsigned int h = 0;
     char *str_key = (char *) key;
-    size_t str_key_len = strlen(key);
+    size_t str_key_len = strlen(str_key);
 
     for(int i=0; i < str_key_len; i++) {
         h += str_key[i];
@@ -76,17 +76,18 @@ static linked_node_t *find_node_with_key(const linked_list_t *list, const void *
 }
 
 // hash map operations
-void hash_map_init_default(hash_map_t **hash_map, allocator_t *key_allocator, allocator_t *value_allocator, compare_func_t key_cmp_func) {
-    hash_map_init(hash_map, key_allocator, value_allocator, key_cmp_func, DEFAULT_HASH_MAP_SIZE);
+void hash_map_init_default(hash_map_t **hash_map, allocator_t *key_allocator, allocator_t *value_allocator, compare_func_t key_cmp_func, hash_func_t hash_func) {
+    hash_map_init(hash_map, key_allocator, value_allocator, key_cmp_func, hash_func, DEFAULT_HASH_MAP_SIZE);
 }
 
-void hash_map_init(hash_map_t **hash_map, allocator_t *key_allocator, allocator_t *value_allocator, compare_func_t key_cmp_func, size_t size) {
+void hash_map_init(hash_map_t **hash_map, allocator_t *key_allocator, allocator_t *value_allocator, compare_func_t key_cmp_func, hash_func_t hash_func, size_t size) {
 
     *hash_map = malloc(sizeof(hash_map_t));
     (*hash_map)->size = size;
     (*hash_map)->key_allocator = key_allocator;
     (*hash_map)->value_allocator = value_allocator;
     (*hash_map)->key_cmp_func = key_cmp_func;
+    (*hash_map)->hash_function = hash_func;
 
     (*hash_map)->table_of_lists = malloc(size * sizeof(linked_list_t *));
     for(int i=0; i < size; i++) {

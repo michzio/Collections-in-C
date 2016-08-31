@@ -6,8 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/test/test_linked_list.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_hash_map.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/test_hash_map.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/hash_map/hash_map.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hash_map/hash_map.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hash_map/int_hash_map.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hash_map/str_hash_map.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hash_map/int_hash_map.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hash_map/str_hash_map.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hash_map/hash_map.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/common/data_handler.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/common/comparer.h" isTestSource="false" />
