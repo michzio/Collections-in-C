@@ -9,6 +9,7 @@ typedef int (*compare_int_func_t)(const int, const int);
 typedef int (*compare_func_t)(const void *, const void *);
 
 int int_cmp_func(const int a, const int b);
+int int_ptr_cmp_func(const void *int1, const void *int2);
 int str_cmp_func(const void *str1, const void *str2);
 int pthread_cmp_func(const void *pthread1, const void *pthread2);
 

@@ -81,3 +81,14 @@ void string_deallocate_handler(void **data_store) {
 
     free((char *)*data_store);
 }
+
+void int_allocate_handler(void **data_store, void *data, size_t data_size) {
+
+    *data_store = (int *) malloc(data_size);
+    memcpy(*data_store, (int *) data, data_size); // **data_store = *((int *) data)
+}
+
+void int_deallocate_handler(void **data_store) {
+
+    free((int *)*data_store);
+}

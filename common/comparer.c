@@ -9,6 +9,14 @@ int int_cmp_func(const int a, const int b) {
     return (a < b) ? -1 : (a > b);
 }
 
+int int_ptr_cmp_func(const void *int1, const void *int2) {
+
+    const int *i1 = (const int *) int1;
+    const int *i2 = (const int *) int2;
+
+    return (*i1 < *i2) ? -1 : (*i1 > *i2);
+}
+
 int str_cmp_func(const void *str1, const void *str2) {
     return strcmp((const char *) str1, (const char *) str2);
 }

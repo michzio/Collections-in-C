@@ -23,5 +23,7 @@ void allocator_free(allocator_t *allocator);
 // allocator handlers
 void string_allocate_handler(void **data_store, void *data, size_t data_size);
 void string_deallocate_handler(void **data_store);
+void int_allocate_handler(void **data_store, void *data, size_t data_size);
+void int_deallocate_handler(void **data_store);
 
 #endif //REMOTECONTROLLERAPI_SERVER_ALLOCATOR_H
