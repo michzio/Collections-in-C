@@ -56,3 +56,8 @@ void int_hash_map_free(int_hash_map_t *int_hash_map) {
     // deallocate int hash map wrapper
     free(int_hash_map);
 }
+
+char *int_hash_map_to_string(int_hash_map_t *int_hash_map, stringify_t value_stringify) {
+
+    return hash_map_to_string(int_hash_map->hash_map, int_stringify, value_stringify);
+}

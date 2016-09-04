@@ -6,6 +6,7 @@
 #define COLLECTIONS_STR_HASH_MAP_H
 
 #include "../common/allocator.h"
+#include "hash_map.h"
 
 // hashable map (based on generic hashable map) storing generic values for string keys
 struct str_hash_map;
@@ -18,5 +19,7 @@ void str_hash_map_put(str_hash_map_t *str_hash_map, char *str_key, void *val, si
 void *str_hash_map_get(str_hash_map_t *str_hash_map, char *str_key, size_t *val_size);
 result_t str_hash_map_remove(str_hash_map_t *str_hash_map, char *str_key);
 void str_hash_map_free(str_hash_map_t *str_hash_map);
+
+char *str_hash_map_to_string(str_hash_map_t *str_hash_map, stringify_t value_stringify);
 
 #endif //COLLECTIONS_STR_HASH_MAP_H

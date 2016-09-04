@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
+#include <stdio.h>
 #include "hash_map.h"
 #include "../linked_list/linked_list.h"
 
@@ -46,7 +47,7 @@ int str_hash_func(hash_map_t *hash_map, void *key) {
     // using hash table mask = hash table size - 1
     // it is used instead of modulo operation ( % hash table size )
     // as AND binary operation is faster than modulo operation
-    return (h * 1049) & (hash_map->size - 1);
+    return (h * 1049) % (hash_map->size);
 }
 
 int int_ptr_hash_func(hash_map_t *hash_map, void *key) {
@@ -59,7 +60,7 @@ int int_ptr_hash_func(hash_map_t *hash_map, void *key) {
     // using hash table mask = hash table size - 1
     // it is used instead of modulo operation ( % hash table size )
     // as AND binary operation is faster than modulo operation
-    return (h * 1049) & (hash_map->size -1);
+    return (h * 1049) % (hash_map->size);
 
 }
 
@@ -174,12 +175,12 @@ void *hash_map_get(hash_map_t *hash_map, void *key, size_t *val_size) {
     if(found_node != NULL) {
         // value found for given key
         key_value_pair_t *kvp = linked_node_unwrap_data(found_node, NULL);
-        *val_size = kvp->value_size;
+        if(val_size != NULL)  *val_size = kvp->value_size;
         return kvp->value;
     }
 
     // else nothing found for given key
-    *val_size = 0;
+    if(val_size != NULL) *val_size = 0;
     return NULL;
 }
 
@@ -257,4 +258,74 @@ void hash_map_free(hash_map_t *hash_map) {
     // deallocate hash map
     free(hash_map);
     hash_map = NULL;
+}
+
+static void str_append(char **str, size_t *str_len, const char *appendix, const size_t appendix_len) {
+
+    *str = realloc(*str, sizeof(char)*(*str_len + appendix_len));
+    strncpy(*str + *str_len, appendix, appendix_len);
+    *str_len += appendix_len;
+}
+
+char *hash_map_to_string(hash_map_t *hash_map, stringify_t key_stringify, stringify_t value_stringify) {
+
+    char *str, *a;
+    size_t str_len = 0, a_len = 0;
+
+    str = malloc(sizeof(char)*str_len);
+
+    // go through table of lists
+    for(int i=0; i<hash_map->size; i++) {
+
+        // append hash table index
+        a = int_stringify(&i, sizeof(i));
+        a_len = strlen(a);
+        str_append(&str, &str_len, a, a_len);
+        free(a);
+        // append separator
+        str_append(&str, &str_len, ";", 1);
+
+        // go through ith list nodes
+        for(linked_node_t *node = linked_list_front(hash_map->table_of_lists[i]); node != NULL; node = linked_list_next(node)) {
+
+            key_value_pair_t *kvp = linked_node_unwrap_data(node, NULL);
+
+            // append key
+            a = key_stringify(kvp->key, kvp->key_size);
+            a_len = strlen(a);
+            str_append(&str, &str_len, a, a_len);
+            free(a);
+            // append separator
+            str_append(&str, &str_len, "=", 1);
+
+            // append value
+            a = value_stringify(kvp->value, kvp->value_size);
+            a_len = strlen(a);
+            str_append(&str, &str_len, a, a_len);
+            free(a);
+            // append separator
+            str_append(&str, &str_len, ",", 1);
+        }
+
+        str_append(&str, &str_len, "\n", 1);
+    }
+    str_append(&str, &str_len, "\0", 1);
+
+    return str;
+}
+
+// stringify functions:
+char *str_stringify(const void *data, size_t data_size) {
+    char *str = malloc(data_size);
+    sprintf(str, "%s", (const char *) data);
+    return str;
+}
+
+char *int_stringify(const void *data, size_t data_size) {
+
+    const int *i = (const int *) data;
+    int str_len = snprintf(NULL, 0, "%d", *i);
+    char *str = malloc(str_len*sizeof(char));
+    sprintf(str, "%d", *i);
+    return str;
 }

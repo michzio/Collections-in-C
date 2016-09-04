@@ -57,3 +57,8 @@ void str_hash_map_free(str_hash_map_t *str_hash_map) {
     // deallocate string hash map wrapper
     free(str_hash_map);
 }
+
+char *str_hash_map_to_string(str_hash_map_t *str_hash_map, stringify_t value_stringify) {
+
+    return hash_map_to_string(str_hash_map->hash_map, str_stringify, value_stringify);
+}
