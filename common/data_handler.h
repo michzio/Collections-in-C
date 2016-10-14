@@ -2,8 +2,8 @@
 // Created by Michal Ziobro on 04/08/2016.
 //
 
-#ifndef REMOTECONTROLLERAPI_SERVER_DATA_HANDLER_H
-#define REMOTECONTROLLERAPI_SERVER_DATA_HANDLER_H
+#ifndef COLLECTIONS_DATA_HANDLER_H
+#define COLLECTIONS_DATA_HANDLER_H
 
 #include <ntsid.h>
 
@@ -14,4 +14,4 @@ void print_string_data_handler(void *data, size_t data_size);
 void free_data_handler(void *data, size_t data_size);
 
 
-#endif //REMOTECONTROLLERAPI_SERVER_DATA_HANDLER_H
+#endif //COLLECTIONS_DATA_HANDLER_H

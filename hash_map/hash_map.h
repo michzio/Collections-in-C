@@ -6,7 +6,7 @@
 #define COLLECTIONS_HASH_MAP_H
 
 #include "../common/allocator.h"
-#include "../common/comparer.h"
+#include "../../comparers/comparer.h"
 #include <ntsid.h>
 
 // hashable map (based on hashable table) storing generic values for generic keys

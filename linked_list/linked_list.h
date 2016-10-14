@@ -13,7 +13,7 @@
 
 #include "../common/allocator.h"
 #include "../common/data_handler.h"
-#include "../common/comparer.h"
+#include "../../comparers/comparer.h"
 
 struct linked_node;
 typedef struct linked_node linked_node_t;

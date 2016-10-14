@@ -3,6 +3,9 @@
 # the compiler: gcc for C program, define as g++ for C++ 
 CC = gcc 
 
+# the static library archiver 
+AR = ar rcs 
+
 # compiler flags: 
 # -g enable debugging 
 # -Wall turn on all warnings 
@@ -11,14 +14,27 @@ CC = gcc
 # -std=c99 use newer version 
 CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
-# the build target executable: 
-TARGET = collections 
+# libraries
+COMPARERS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/libcomparers.a
 UNIT_TESTS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/libunit_tests.a
 
-all: $(TARGET) 
+# source files 
+SOURCE_FILES = hash_map.o int_hash_map.o str_hash_map.o doubly_linked_list.o linked_list.o allocator.o data_handler.o
 
-$(TARGET): hash_map.o int_hash_map.o str_hash_map.o linked_list.o allocator.o comparer.o data_handler.o test_hash_map.o test_int_hash_map.o test_linked_list.o test_str_hash_map.o
-	$(CC) $(CFLAGS) -o collections main.c hash_map.o int_hash_map.o str_hash_map.o linked_list.o allocator.o comparer.o data_handler.o test_hash_map.o test_int_hash_map.o test_linked_list.o test_str_hash_map.o $(UNIT_TESTS_LIBRARY)
+# test source files
+TEST_SOURCE_FILES = test_hash_map.o test_int_hash_map.o test_linked_list.o test_str_hash_map.o test_doubly_linked_list.o
+
+# the build target executable: 
+TARGET = collections
+LIBRARY = libcollections.a
+
+all: $(TARGET)
+
+$(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)  
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(COMPARERS_LIBRARY) $(TEST_SOURCE_FILES) $(UNIT_TESTS_LIBRARY)
+
+$(LIBRARY): $(SOURCE_FILES)
+	$(AR) $(LIBRARY) $(SOURCE_FILES)
 
 hash_map.o: hash_map/hash_map.c hash_map/hash_map.h
 	$(CC) $(CFLAGS) -c hash_map/hash_map.c 
@@ -29,14 +45,14 @@ int_hash_map.o: hash_map/int_hash_map.c hash_map/int_hash_map.h
 str_hash_map.o: hash_map/str_hash_map.c hash_map/str_hash_map.h 
 	$(CC) $(CFLAGS) -c hash_map/str_hash_map.c 
 
+doubly_linked_list.o: linked_list/doubly_linked_list.c linked_list/doubly_linked_list.h 
+	$(CC) $(CFLAGS) -c linked_list/doubly_linked_list.c
+
 linked_list.o: linked_list/linked_list.c linked_list/linked_list.h 
 	$(CC) $(CFLAGS) -c linked_list/linked_list.c 
 
-allocator.o: common/allocator.c common/allocator.h common/types.h
+allocator.o: common/allocator.c common/allocator.h
 	$(CC) $(CFLAGS) -c common/allocator.c
-
-comparer.o: common/comparer.c common/comparer.h 
-	$(CC) $(CFLAGS) -c common/comparer.c 
 
 data_handler.o: common/data_handler.c common/data_handler.h
 	$(CC) $(CFLAGS) -c common/data_handler.c
@@ -53,5 +69,8 @@ test_linked_list.o: test/test_linked_list.c test/test_linked_list.h
 test_str_hash_map.o: test/test_str_hash_map.c test/test_str_hash_map.h 
 	$(CC) $(CFLAGS) -c test/test_str_hash_map.c 
 
+test_doubly_linked_list.o: test/test_doubly_linked_list.c test/test_doubly_linked_list.h
+	$(CC) $(CFLAGS) -c test/test_doubly_linked_list.c
+
 clean: 
-	$(RM) $(TARGET) hash_map.o int_hash_map.o str_hash_map.o linked_list.o allocator.o comparer.o data_handler.o test_hash_map.o test_int_hash_map.o test_linked_list.o test_str_hash_map.o
+	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)

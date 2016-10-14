@@ -2,10 +2,10 @@
 // Created by Michal Ziobro on 04/08/2016.
 //
 
-#ifndef REMOTECONTROLLERAPI_SERVER_ALLOCATOR_H
-#define REMOTECONTROLLERAPI_SERVER_ALLOCATOR_H
+#ifndef COLLECTIONS_ALLOCATOR_H
+#define COLLECTIONS_ALLOCATOR_H
 
-#include "types.h"
+#include "../../common/types.h"
 #include <ntsid.h>
 
 struct allocator;
@@ -26,4 +26,4 @@ void string_deallocate_handler(void **data_store);
 void int_allocate_handler(void **data_store, void *data, size_t data_size);
 void int_deallocate_handler(void **data_store);
 
-#endif //REMOTECONTROLLERAPI_SERVER_ALLOCATOR_H
+#endif //COLLECTIONS_ALLOCATOR_H
