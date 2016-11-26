@@ -7,7 +7,7 @@
 
 #include "../common/allocator.h"
 #include "../../comparers/comparer.h"
-#include <ntsid.h>
+#include <stdio.h>
 
 // hashable map (based on hashable table) storing generic values for generic keys
 struct hash_map;

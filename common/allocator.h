@@ -6,7 +6,7 @@
 #define COLLECTIONS_ALLOCATOR_H
 
 #include "../../common/types.h"
-#include <ntsid.h>
+#include <stdio.h>
 
 struct allocator;
 typedef struct allocator allocator_t;

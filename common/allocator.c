@@ -72,8 +72,9 @@ void allocator_free(allocator_t *allocator) {
 // allocator handlers
 void string_allocate_handler(void **data_store, void *data, size_t data_size) {
 
-    *data_store = (char *) malloc(data_size);
-    memcpy(*data_store, (char *) data, data_size);
+    // data_size + 1 added to include '\0' string end character
+    *data_store = (char *) malloc(data_size+1);
+    memcpy(*data_store, (char *) data, data_size+1);
 }
 
 void string_deallocate_handler(void **data_store) {

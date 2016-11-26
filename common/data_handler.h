@@ -5,7 +5,7 @@
 #ifndef COLLECTIONS_DATA_HANDLER_H
 #define COLLECTIONS_DATA_HANDLER_H
 
-#include <ntsid.h>
+#include <stdio.h>
 
 typedef void (*data_handler_t)(void *data, size_t data_size);
 
