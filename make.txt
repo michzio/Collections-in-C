@@ -15,8 +15,9 @@ AR = ar rcs
 CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
 # libraries
-COMPARERS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/libcomparers.a
-UNIT_TESTS_LIBRARY = /Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/libunit_tests.a
+# custom
+COMPARERS_LIBRARY = ../comparers/libcomparers.a
+UNIT_TESTS_LIBRARY = ../unit_tests/libunit_tests.a
 
 # source files 
 SOURCE_FILES = hash_map.o int_hash_map.o str_hash_map.o doubly_linked_list.o linked_list.o allocator.o data_handler.o
@@ -31,7 +32,7 @@ LIBRARY = libcollections.a
 all: $(TARGET)
 
 $(TARGET): main.c $(LIBRARY) $(TEST_SOURCE_FILES)  
-	$(CC) $(CFLAGS) -o $(TARGET) main.c $(LIBRARY) $(COMPARERS_LIBRARY) $(TEST_SOURCE_FILES) $(UNIT_TESTS_LIBRARY)
+	$(CC) $(CFLAGS) -o $(TARGET) main.c $(TEST_SOURCE_FILES) $(LIBRARY) $(COMPARERS_LIBRARY) $(UNIT_TESTS_LIBRARY)
 
 $(LIBRARY): $(SOURCE_FILES)
 	$(AR) $(LIBRARY) $(SOURCE_FILES)
@@ -73,4 +74,4 @@ test_doubly_linked_list.o: test/test_doubly_linked_list.c test/test_doubly_linke
 	$(CC) $(CFLAGS) -c test/test_doubly_linked_list.c
 
 clean: 
-	$(RM) $(TARGET) $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)
+	$(RM) $(TARGET) $(TARGET).exe $(LIBRARY) $(SOURCE_FILES) $(TEST_SOURCE_FILES)

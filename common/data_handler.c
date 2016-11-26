@@ -10,7 +10,7 @@
 // data handlers
 void print_string_data_handler(void *data, size_t data_size) {
 
-    printf("%s, ", data);
+    printf("%s, ", (char *) data);
 }
 
 void free_data_handler(void *data, size_t data_size) {
