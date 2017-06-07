@@ -1,0 +1,3 @@
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/output/unix/bin/collections
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/output/unix/lib/libcollections.dylib
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/output/unix/lib/static/libcollections.a

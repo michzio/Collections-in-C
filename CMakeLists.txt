@@ -27,7 +27,7 @@ else()
 endif()
 
 add_library(Collections_Lib SHARED ${SOURCE_FILES})
-set_target_properties(Collections_Lib PROPERTIES OUTPUT_NAME collections_shared)
+set_target_properties(Collections_Lib PROPERTIES OUTPUT_NAME collections)
 target_link_libraries(Collections_Lib ${COMPARERS_LIB_PATH})
 
 add_library(Collections_Lib_Static ${SOURCE_FILES})
