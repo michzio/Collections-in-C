@@ -59,8 +59,8 @@ stdio.h
 -
 test/test_linked_list.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_linked_list.h
-hash_map/hash_map.h
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/hash_map.h
+test/test_int_linked_list.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.h
 test/test_hash_map.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_hash_map.h
 test/test_str_hash_map.h
@@ -119,6 +119,20 @@ test_int_hash_map.h
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_hash_map.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.c
+stdlib.h
+-
+test_int_linked_list.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.h
+../common/data_handler.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/data_handler.h
+../linked_list/linked_list.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/linked_list/linked_list.h
+../../unit_tests/test/assertion.h
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/unit_tests/test/assertion.h
+
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.h
 
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_linked_list.c
 stdio.h

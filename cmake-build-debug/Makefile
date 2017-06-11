@@ -524,6 +524,33 @@ test/test_int_hash_map.c.s:
 	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/test/test_int_hash_map.c.s
 .PHONY : test/test_int_hash_map.c.s
 
+test/test_int_linked_list.o: test/test_int_linked_list.c.o
+
+.PHONY : test/test_int_linked_list.o
+
+# target to build an object file
+test/test_int_linked_list.c.o:
+	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/test/test_int_linked_list.c.o
+.PHONY : test/test_int_linked_list.c.o
+
+test/test_int_linked_list.i: test/test_int_linked_list.c.i
+
+.PHONY : test/test_int_linked_list.i
+
+# target to preprocess a source file
+test/test_int_linked_list.c.i:
+	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/test/test_int_linked_list.c.i
+.PHONY : test/test_int_linked_list.c.i
+
+test/test_int_linked_list.s: test/test_int_linked_list.c.s
+
+.PHONY : test/test_int_linked_list.s
+
+# target to generate assembly for a file
+test/test_int_linked_list.c.s:
+	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/test/test_int_linked_list.c.s
+.PHONY : test/test_int_linked_list.c.s
+
 test/test_linked_list.o: test/test_linked_list.c.o
 
 .PHONY : test/test_linked_list.o
@@ -627,6 +654,9 @@ help:
 	@echo "... test/test_int_hash_map.o"
 	@echo "... test/test_int_hash_map.i"
 	@echo "... test/test_int_hash_map.s"
+	@echo "... test/test_int_linked_list.o"
+	@echo "... test/test_int_linked_list.i"
+	@echo "... test/test_int_linked_list.s"
 	@echo "... test/test_linked_list.o"
 	@echo "... test/test_linked_list.i"
 	@echo "... test/test_linked_list.s"

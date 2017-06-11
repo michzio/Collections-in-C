@@ -36,11 +36,13 @@ void dl_list_push_front(doubly_linked_list_t *list, void *data, size_t data_size
 void dl_list_push_node_front(doubly_linked_list_t *list, doubly_linked_node_t *new_node);
 void dl_list_push_back(doubly_linked_list_t *list, void *data, size_t data_size);
 void dl_list_push_node_back(doubly_linked_list_t *list, doubly_linked_node_t *new_node);
-void dl_list_remove_node(doubly_linked_list_t *list, doubly_linked_node_t *old_node);
+result_t dl_list_remove_node(doubly_linked_list_t *list, doubly_linked_node_t *old_node);
 doubly_linked_node_t *dl_list_front(const doubly_linked_list_t *list);
 doubly_linked_node_t *dl_list_back(const doubly_linked_list_t *list);
 void dl_list_pop_front(doubly_linked_list_t *list);
 void dl_list_pop_back(doubly_linked_list_t *list);
+doubly_linked_node_t *dl_list_next(doubly_linked_node_t *node);
+doubly_linked_node_t *dl_list_previous(doubly_linked_node_t *node);
 void dl_list_free(doubly_linked_list_t *list);
 
 // node operations

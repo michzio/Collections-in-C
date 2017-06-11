@@ -3,7 +3,7 @@ project(Collections)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c99")
 set(SOURCE_FILES hash_map/hash_map.h hash_map/hash_map.c common/allocator.h common/allocator.c common/data_handler.h common/data_handler.c linked_list/linked_list.h linked_list/linked_list.c linked_list/doubly_linked_list.h linked_list/doubly_linked_list.c hash_map/str_hash_map.h hash_map/str_hash_map.c hash_map/int_hash_map.h hash_map/int_hash_map.c)
-set(TEST_SOURCE_FILES test/test_hash_map.h test/test_hash_map.c test/test_linked_list.h test/test_linked_list.c test/test_int_hash_map.h test/test_int_hash_map.c test/test_str_hash_map.h test/test_str_hash_map.c test/test_doubly_linked_list.h test/test_doubly_linked_list.c)
+set(TEST_SOURCE_FILES test/test_hash_map.h test/test_hash_map.c test/test_linked_list.h test/test_linked_list.c test/test_int_linked_list.h test/test_int_linked_list.c test/test_int_hash_map.h test/test_int_hash_map.c test/test_str_hash_map.h test/test_str_hash_map.c test/test_doubly_linked_list.h test/test_doubly_linked_list.c)
 
 if(CYGWIN)
     # windows cygwin

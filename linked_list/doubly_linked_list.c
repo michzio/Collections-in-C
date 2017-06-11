@@ -169,12 +169,12 @@ void dl_list_push_node_back(doubly_linked_list_t *list, doubly_linked_node_t *ne
     list->tail = new_node;
 }
 
-void dl_list_remove_node(doubly_linked_list_t *list, doubly_linked_node_t *old_node) {
+result_t dl_list_remove_node(doubly_linked_list_t *list, doubly_linked_node_t *old_node) {
 
     // if node to delete unspecified return error
     if (old_node == NULL) {
         fprintf(stderr, "Node to delete is empty!");
-        return;
+        return FAILURE;
     }
 
     // if node to delete is the only left on the list make empty list
@@ -190,6 +190,8 @@ void dl_list_remove_node(doubly_linked_list_t *list, doubly_linked_node_t *old_n
     }
 
     dl_node_free(list, old_node);
+
+    return SUCCESS;
 }
 
 doubly_linked_node_t *dl_list_front(const doubly_linked_list_t *list) {
@@ -265,6 +267,14 @@ void dl_wrap_data(doubly_linked_list_t *list, doubly_linked_node_t *node, void *
         // when client is owning data only store pointer to it
         node->data = data;
     }
+}
+
+doubly_linked_node_t *dl_list_next(doubly_linked_node_t *node) {
+    return node->next;
+}
+
+doubly_linked_node_t *dl_list_previous(doubly_linked_node_t *node) {
+    return node->prev;
 }
 
 /**

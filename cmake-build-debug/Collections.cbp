@@ -291,6 +291,12 @@
 		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_hash_map.h">
 			<Option target="Collections"/>
 		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.c">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.h">
+			<Option target="Collections"/>
+		</Unit>
 		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_linked_list.c">
 			<Option target="Collections"/>
 		</Unit>

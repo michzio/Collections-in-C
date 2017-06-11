@@ -129,9 +129,33 @@ CMakeFiles/Collections.dir/test/test_linked_list.c.o.provides: CMakeFiles/Collec
 CMakeFiles/Collections.dir/test/test_linked_list.c.o.provides.build: CMakeFiles/Collections.dir/test/test_linked_list.c.o
 
 
+CMakeFiles/Collections.dir/test/test_int_linked_list.c.o: CMakeFiles/Collections.dir/flags.make
+CMakeFiles/Collections.dir/test/test_int_linked_list.c.o: ../test/test_int_linked_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Collections.dir/test/test_int_linked_list.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections.dir/test/test_int_linked_list.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.c
+
+CMakeFiles/Collections.dir/test/test_int_linked_list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections.dir/test/test_int_linked_list.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.c > CMakeFiles/Collections.dir/test/test_int_linked_list.c.i
+
+CMakeFiles/Collections.dir/test/test_int_linked_list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections.dir/test/test_int_linked_list.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.c -o CMakeFiles/Collections.dir/test/test_int_linked_list.c.s
+
+CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.requires:
+
+.PHONY : CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.requires
+
+CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.provides: CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.provides.build
+.PHONY : CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.provides
+
+CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.provides.build: CMakeFiles/Collections.dir/test/test_int_linked_list.c.o
+
+
 CMakeFiles/Collections.dir/test/test_int_hash_map.c.o: CMakeFiles/Collections.dir/flags.make
 CMakeFiles/Collections.dir/test/test_int_hash_map.c.o: ../test/test_int_hash_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Collections.dir/test/test_int_hash_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Collections.dir/test/test_int_hash_map.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections.dir/test/test_int_hash_map.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_hash_map.c
 
 CMakeFiles/Collections.dir/test/test_int_hash_map.c.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/Collections.dir/test/test_int_hash_map.c.o.provides.build: CMakeFiles
 
 CMakeFiles/Collections.dir/test/test_str_hash_map.c.o: CMakeFiles/Collections.dir/flags.make
 CMakeFiles/Collections.dir/test/test_str_hash_map.c.o: ../test/test_str_hash_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Collections.dir/test/test_str_hash_map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Collections.dir/test/test_str_hash_map.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections.dir/test/test_str_hash_map.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_str_hash_map.c
 
 CMakeFiles/Collections.dir/test/test_str_hash_map.c.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/Collections.dir/test/test_str_hash_map.c.o.provides.build: CMakeFiles
 
 CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o: CMakeFiles/Collections.dir/flags.make
 CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o: ../test/test_doubly_linked_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_doubly_linked_list.c
 
 CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.i: cmake_force
@@ -206,6 +230,7 @@ Collections_OBJECTS = \
 "CMakeFiles/Collections.dir/main.c.o" \
 "CMakeFiles/Collections.dir/test/test_hash_map.c.o" \
 "CMakeFiles/Collections.dir/test/test_linked_list.c.o" \
+"CMakeFiles/Collections.dir/test/test_int_linked_list.c.o" \
 "CMakeFiles/Collections.dir/test/test_int_hash_map.c.o" \
 "CMakeFiles/Collections.dir/test/test_str_hash_map.c.o" \
 "CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o"
@@ -216,6 +241,7 @@ Collections_EXTERNAL_OBJECTS =
 collections: CMakeFiles/Collections.dir/main.c.o
 collections: CMakeFiles/Collections.dir/test/test_hash_map.c.o
 collections: CMakeFiles/Collections.dir/test/test_linked_list.c.o
+collections: CMakeFiles/Collections.dir/test/test_int_linked_list.c.o
 collections: CMakeFiles/Collections.dir/test/test_int_hash_map.c.o
 collections: CMakeFiles/Collections.dir/test/test_str_hash_map.c.o
 collections: CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o
@@ -224,7 +250,7 @@ collections: libcollections.a
 collections: ../../unit_tests/output/unix/lib/static/libunit_tests.a
 collections: ../../comparers/output/unix/lib/static/libcomparers.a
 collections: CMakeFiles/Collections.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable collections"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable collections"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Collections.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -235,6 +261,7 @@ CMakeFiles/Collections.dir/build: collections
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/main.c.o.requires
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_hash_map.c.o.requires
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_linked_list.c.o.requires
+CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.requires
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_int_hash_map.c.o.requires
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_str_hash_map.c.o.requires
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o.requires

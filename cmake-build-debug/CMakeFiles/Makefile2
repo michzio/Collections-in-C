@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/collecti
 CMakeFiles/Collections_Lib_Static.dir/all:
 	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/depend
 	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=16,17,18,19,20,21,22,23 "Built target Collections_Lib_Static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=17,18,19,20,21,22,23,24 "Built target Collections_Lib_Static"
 .PHONY : CMakeFiles/Collections_Lib_Static.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/Collections_Lib_Static.dir/clean
 CMakeFiles/Collections.dir/all: CMakeFiles/Collections_Lib_Static.dir/all
 	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/depend
 	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Collections"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Collections"
 .PHONY : CMakeFiles/Collections.dir/all
 
 # Include target in all.
@@ -113,7 +113,7 @@ all: CMakeFiles/Collections.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Collections.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Collections.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Collections.dir/rule
@@ -140,12 +140,12 @@ clean: CMakeFiles/Collections.dir/clean
 CMakeFiles/Install_Collections.dir/all: CMakeFiles/Collections.dir/all
 	$(MAKE) -f CMakeFiles/Install_Collections.dir/build.make CMakeFiles/Install_Collections.dir/depend
 	$(MAKE) -f CMakeFiles/Install_Collections.dir/build.make CMakeFiles/Install_Collections.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=24 "Built target Install_Collections"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=25 "Built target Install_Collections"
 .PHONY : CMakeFiles/Install_Collections.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Install_Collections.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Install_Collections.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Install_Collections.dir/rule
@@ -172,7 +172,7 @@ clean: CMakeFiles/Install_Collections.dir/clean
 CMakeFiles/Collections_Lib.dir/all:
 	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/depend
 	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=8,9,10,11,12,13,14,15 "Built target Collections_Lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target Collections_Lib"
 .PHONY : CMakeFiles/Collections_Lib.dir/all
 
 # Include target in all.

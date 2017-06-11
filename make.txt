@@ -23,7 +23,7 @@ UNIT_TESTS_LIBRARY = ../unit_tests/output/debug/lib/static/libunit_tests.a
 SOURCE_FILES = hash_map.o int_hash_map.o str_hash_map.o doubly_linked_list.o linked_list.o allocator.o data_handler.o
 
 # test source files
-TEST_SOURCE_FILES = test_hash_map.o test_int_hash_map.o test_linked_list.o test_str_hash_map.o test_doubly_linked_list.o
+TEST_SOURCE_FILES = test_hash_map.o test_int_hash_map.o test_linked_list.o test_int_linked_list.o test_str_hash_map.o test_doubly_linked_list.o
 
 # the build target executable: 
 TARGET = collections
@@ -92,6 +92,9 @@ test_int_hash_map.o: test/test_int_hash_map.c test/test_int_hash_map.h
 
 test_linked_list.o: test/test_linked_list.c test/test_linked_list.h
 	$(CC) $(CFLAGS) -c test/test_linked_list.c -o $(OUTPUT_TEST_DIR)/test_linked_list.o
+
+test_int_linked_list.o: test/test_int_linked_list.c test/test_int_linked_list.h
+	$(CC) $(CFLAGS) -c test/test_int_linked_list.c -o $(OUTPUT_TEST_DIR)/test_int_linked_list.o
 
 test_str_hash_map.o: test/test_str_hash_map.c test/test_str_hash_map.h 
 	$(CC) $(CFLAGS) -c test/test_str_hash_map.c -o $(OUTPUT_TEST_DIR)/test_str_hash_map.o
