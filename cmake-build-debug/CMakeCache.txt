@@ -190,13 +190,25 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 Collections_BINARY_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug
 
 //Dependencies for the target
-Collections_Lib_LIB_DEPENDS:STATIC=general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../comparers/output/unix/lib/static/libcomparers.a;
+Collections_Lib_LIB_DEPENDS:STATIC=general;Comparers_Lib;
 
 //Dependencies for the target
-Collections_Lib_Static_LIB_DEPENDS:STATIC=general;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../comparers/output/unix/lib/static/libcomparers.a;
+Collections_Lib_Static_LIB_DEPENDS:STATIC=general;Comparers_Lib_Static;
 
 //Value Computed by CMake
 Collections_SOURCE_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections
+
+//Value Computed by CMake
+Comparers_BINARY_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs
+
+//Dependencies for target
+Comparers_Lib_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+Comparers_Lib_Static_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+Comparers_SOURCE_DIR:STATIC=/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
@@ -300,7 +312,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

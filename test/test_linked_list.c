@@ -6,8 +6,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "test_linked_list.h"
-#include "../linked_list/linked_list.h"
-#include "../../unit_tests/test/assertion.h"
+#include "linked_list/linked_list.h"
+#include "test/assertion.h"
 
 static linked_list_t *list;
 

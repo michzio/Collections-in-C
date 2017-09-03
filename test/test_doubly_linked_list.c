@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "test_doubly_linked_list.h"
-#include "../linked_list/doubly_linked_list.h"
-#include "../../unit_tests/test/assertion.h"
+#include "linked_list/doubly_linked_list.h"
+#include "test/assertion.h"
 
 static doubly_linked_list_t *list;
 

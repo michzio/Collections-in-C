@@ -56,50 +56,6 @@ CMAKE_BINARY_DIR = /Users/michzio/Developer/MyProjects/BachelorDegree/c/collecti
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -155,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Collections_Lib_Static
-
-# Build rule for target.
-Collections_Lib_Static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Collections_Lib_Static
-.PHONY : Collections_Lib_Static
-
-# fast build rule for target.
-Collections_Lib_Static/fast:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/build
-.PHONY : Collections_Lib_Static/fast
-
-#=============================================================================
 # Target rules for targets named Collections
 
 # Build rule for target.
@@ -181,17 +124,17 @@ Collections/fast:
 .PHONY : Collections/fast
 
 #=============================================================================
-# Target rules for targets named Install_Collections
+# Target rules for targets named Collections_Lib_Static
 
 # Build rule for target.
-Install_Collections: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Install_Collections
-.PHONY : Install_Collections
+Collections_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Collections_Lib_Static
+.PHONY : Collections_Lib_Static
 
 # fast build rule for target.
-Install_Collections/fast:
-	$(MAKE) -f CMakeFiles/Install_Collections.dir/build.make CMakeFiles/Install_Collections.dir/build
-.PHONY : Install_Collections/fast
+Collections_Lib_Static/fast:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/build
+.PHONY : Collections_Lib_Static/fast
 
 #=============================================================================
 # Target rules for targets named Collections_Lib
@@ -206,242 +149,281 @@ Collections_Lib/fast:
 	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/build
 .PHONY : Collections_Lib/fast
 
-common/allocator.o: common/allocator.c.o
+#=============================================================================
+# Target rules for targets named Comparers
 
-.PHONY : common/allocator.o
+# Build rule for target.
+Comparers: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Comparers
+.PHONY : Comparers
 
-# target to build an object file
-common/allocator.c.o:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/common/allocator.c.o
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/common/allocator.c.o
-.PHONY : common/allocator.c.o
+# fast build rule for target.
+Comparers/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers.dir/build
+.PHONY : Comparers/fast
 
-common/allocator.i: common/allocator.c.i
+#=============================================================================
+# Target rules for targets named Comparers_Lib_Static
 
-.PHONY : common/allocator.i
+# Build rule for target.
+Comparers_Lib_Static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Comparers_Lib_Static
+.PHONY : Comparers_Lib_Static
 
-# target to preprocess a source file
-common/allocator.c.i:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/common/allocator.c.i
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/common/allocator.c.i
-.PHONY : common/allocator.c.i
+# fast build rule for target.
+Comparers_Lib_Static/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib_Static.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib_Static.dir/build
+.PHONY : Comparers_Lib_Static/fast
 
-common/allocator.s: common/allocator.c.s
+#=============================================================================
+# Target rules for targets named Comparers_Lib
 
-.PHONY : common/allocator.s
+# Build rule for target.
+Comparers_Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Comparers_Lib
+.PHONY : Comparers_Lib
 
-# target to generate assembly for a file
-common/allocator.c.s:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/common/allocator.c.s
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/common/allocator.c.s
-.PHONY : common/allocator.c.s
+# fast build rule for target.
+Comparers_Lib/fast:
+	$(MAKE) -f /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib.dir/build.make /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib.dir/build
+.PHONY : Comparers_Lib/fast
 
-common/data_handler.o: common/data_handler.c.o
+src/common/allocator.o: src/common/allocator.c.o
 
-.PHONY : common/data_handler.o
-
-# target to build an object file
-common/data_handler.c.o:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/common/data_handler.c.o
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/common/data_handler.c.o
-.PHONY : common/data_handler.c.o
-
-common/data_handler.i: common/data_handler.c.i
-
-.PHONY : common/data_handler.i
-
-# target to preprocess a source file
-common/data_handler.c.i:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/common/data_handler.c.i
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/common/data_handler.c.i
-.PHONY : common/data_handler.c.i
-
-common/data_handler.s: common/data_handler.c.s
-
-.PHONY : common/data_handler.s
-
-# target to generate assembly for a file
-common/data_handler.c.s:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/common/data_handler.c.s
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/common/data_handler.c.s
-.PHONY : common/data_handler.c.s
-
-hash_map/hash_map.o: hash_map/hash_map.c.o
-
-.PHONY : hash_map/hash_map.o
+.PHONY : src/common/allocator.o
 
 # target to build an object file
-hash_map/hash_map.c.o:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/hash_map.c.o
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o
-.PHONY : hash_map/hash_map.c.o
+src/common/allocator.c.o:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/common/allocator.c.o
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o
+.PHONY : src/common/allocator.c.o
 
-hash_map/hash_map.i: hash_map/hash_map.c.i
+src/common/allocator.i: src/common/allocator.c.i
 
-.PHONY : hash_map/hash_map.i
+.PHONY : src/common/allocator.i
 
 # target to preprocess a source file
-hash_map/hash_map.c.i:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/hash_map.c.i
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.i
-.PHONY : hash_map/hash_map.c.i
+src/common/allocator.c.i:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/common/allocator.c.i
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/common/allocator.c.i
+.PHONY : src/common/allocator.c.i
 
-hash_map/hash_map.s: hash_map/hash_map.c.s
+src/common/allocator.s: src/common/allocator.c.s
 
-.PHONY : hash_map/hash_map.s
+.PHONY : src/common/allocator.s
 
 # target to generate assembly for a file
-hash_map/hash_map.c.s:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/hash_map.c.s
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.s
-.PHONY : hash_map/hash_map.c.s
+src/common/allocator.c.s:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/common/allocator.c.s
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/common/allocator.c.s
+.PHONY : src/common/allocator.c.s
 
-hash_map/int_hash_map.o: hash_map/int_hash_map.c.o
+src/common/data_handler.o: src/common/data_handler.c.o
 
-.PHONY : hash_map/int_hash_map.o
+.PHONY : src/common/data_handler.o
 
 # target to build an object file
-hash_map/int_hash_map.c.o:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/int_hash_map.c.o
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o
-.PHONY : hash_map/int_hash_map.c.o
+src/common/data_handler.c.o:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/common/data_handler.c.o
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o
+.PHONY : src/common/data_handler.c.o
 
-hash_map/int_hash_map.i: hash_map/int_hash_map.c.i
+src/common/data_handler.i: src/common/data_handler.c.i
 
-.PHONY : hash_map/int_hash_map.i
+.PHONY : src/common/data_handler.i
 
 # target to preprocess a source file
-hash_map/int_hash_map.c.i:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/int_hash_map.c.i
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.i
-.PHONY : hash_map/int_hash_map.c.i
+src/common/data_handler.c.i:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/common/data_handler.c.i
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.i
+.PHONY : src/common/data_handler.c.i
 
-hash_map/int_hash_map.s: hash_map/int_hash_map.c.s
+src/common/data_handler.s: src/common/data_handler.c.s
 
-.PHONY : hash_map/int_hash_map.s
+.PHONY : src/common/data_handler.s
 
 # target to generate assembly for a file
-hash_map/int_hash_map.c.s:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/int_hash_map.c.s
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.s
-.PHONY : hash_map/int_hash_map.c.s
+src/common/data_handler.c.s:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/common/data_handler.c.s
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.s
+.PHONY : src/common/data_handler.c.s
 
-hash_map/str_hash_map.o: hash_map/str_hash_map.c.o
+src/hash_map/hash_map.o: src/hash_map/hash_map.c.o
 
-.PHONY : hash_map/str_hash_map.o
+.PHONY : src/hash_map/hash_map.o
 
 # target to build an object file
-hash_map/str_hash_map.c.o:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/str_hash_map.c.o
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o
-.PHONY : hash_map/str_hash_map.c.o
+src/hash_map/hash_map.c.o:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/hash_map.c.o
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o
+.PHONY : src/hash_map/hash_map.c.o
 
-hash_map/str_hash_map.i: hash_map/str_hash_map.c.i
+src/hash_map/hash_map.i: src/hash_map/hash_map.c.i
 
-.PHONY : hash_map/str_hash_map.i
+.PHONY : src/hash_map/hash_map.i
 
 # target to preprocess a source file
-hash_map/str_hash_map.c.i:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/str_hash_map.c.i
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.i
-.PHONY : hash_map/str_hash_map.c.i
+src/hash_map/hash_map.c.i:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/hash_map.c.i
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.i
+.PHONY : src/hash_map/hash_map.c.i
 
-hash_map/str_hash_map.s: hash_map/str_hash_map.c.s
+src/hash_map/hash_map.s: src/hash_map/hash_map.c.s
 
-.PHONY : hash_map/str_hash_map.s
+.PHONY : src/hash_map/hash_map.s
 
 # target to generate assembly for a file
-hash_map/str_hash_map.c.s:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/hash_map/str_hash_map.c.s
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.s
-.PHONY : hash_map/str_hash_map.c.s
+src/hash_map/hash_map.c.s:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/hash_map.c.s
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.s
+.PHONY : src/hash_map/hash_map.c.s
 
-linked_list/doubly_linked_list.o: linked_list/doubly_linked_list.c.o
+src/hash_map/int_hash_map.o: src/hash_map/int_hash_map.c.o
 
-.PHONY : linked_list/doubly_linked_list.o
+.PHONY : src/hash_map/int_hash_map.o
 
 # target to build an object file
-linked_list/doubly_linked_list.c.o:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/linked_list/doubly_linked_list.c.o
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o
-.PHONY : linked_list/doubly_linked_list.c.o
+src/hash_map/int_hash_map.c.o:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/int_hash_map.c.o
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o
+.PHONY : src/hash_map/int_hash_map.c.o
 
-linked_list/doubly_linked_list.i: linked_list/doubly_linked_list.c.i
+src/hash_map/int_hash_map.i: src/hash_map/int_hash_map.c.i
 
-.PHONY : linked_list/doubly_linked_list.i
+.PHONY : src/hash_map/int_hash_map.i
 
 # target to preprocess a source file
-linked_list/doubly_linked_list.c.i:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/linked_list/doubly_linked_list.c.i
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.i
-.PHONY : linked_list/doubly_linked_list.c.i
+src/hash_map/int_hash_map.c.i:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/int_hash_map.c.i
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.i
+.PHONY : src/hash_map/int_hash_map.c.i
 
-linked_list/doubly_linked_list.s: linked_list/doubly_linked_list.c.s
+src/hash_map/int_hash_map.s: src/hash_map/int_hash_map.c.s
 
-.PHONY : linked_list/doubly_linked_list.s
+.PHONY : src/hash_map/int_hash_map.s
 
 # target to generate assembly for a file
-linked_list/doubly_linked_list.c.s:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/linked_list/doubly_linked_list.c.s
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.s
-.PHONY : linked_list/doubly_linked_list.c.s
+src/hash_map/int_hash_map.c.s:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/int_hash_map.c.s
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.s
+.PHONY : src/hash_map/int_hash_map.c.s
 
-linked_list/linked_list.o: linked_list/linked_list.c.o
+src/hash_map/str_hash_map.o: src/hash_map/str_hash_map.c.o
 
-.PHONY : linked_list/linked_list.o
+.PHONY : src/hash_map/str_hash_map.o
 
 # target to build an object file
-linked_list/linked_list.c.o:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/linked_list/linked_list.c.o
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o
-.PHONY : linked_list/linked_list.c.o
+src/hash_map/str_hash_map.c.o:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/str_hash_map.c.o
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o
+.PHONY : src/hash_map/str_hash_map.c.o
 
-linked_list/linked_list.i: linked_list/linked_list.c.i
+src/hash_map/str_hash_map.i: src/hash_map/str_hash_map.c.i
 
-.PHONY : linked_list/linked_list.i
+.PHONY : src/hash_map/str_hash_map.i
 
 # target to preprocess a source file
-linked_list/linked_list.c.i:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/linked_list/linked_list.c.i
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.i
-.PHONY : linked_list/linked_list.c.i
+src/hash_map/str_hash_map.c.i:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/str_hash_map.c.i
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.i
+.PHONY : src/hash_map/str_hash_map.c.i
 
-linked_list/linked_list.s: linked_list/linked_list.c.s
+src/hash_map/str_hash_map.s: src/hash_map/str_hash_map.c.s
 
-.PHONY : linked_list/linked_list.s
+.PHONY : src/hash_map/str_hash_map.s
 
 # target to generate assembly for a file
-linked_list/linked_list.c.s:
-	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/linked_list/linked_list.c.s
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.s
-.PHONY : linked_list/linked_list.c.s
+src/hash_map/str_hash_map.c.s:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/hash_map/str_hash_map.c.s
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.s
+.PHONY : src/hash_map/str_hash_map.c.s
 
-main.o: main.c.o
+src/linked_list/doubly_linked_list.o: src/linked_list/doubly_linked_list.c.o
 
-.PHONY : main.o
+.PHONY : src/linked_list/doubly_linked_list.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/main.c.o
-.PHONY : main.c.o
+src/linked_list/doubly_linked_list.c.o:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/linked_list/doubly_linked_list.c.o
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o
+.PHONY : src/linked_list/doubly_linked_list.c.o
 
-main.i: main.c.i
+src/linked_list/doubly_linked_list.i: src/linked_list/doubly_linked_list.c.i
 
-.PHONY : main.i
+.PHONY : src/linked_list/doubly_linked_list.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/main.c.i
-.PHONY : main.c.i
+src/linked_list/doubly_linked_list.c.i:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/linked_list/doubly_linked_list.c.i
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.i
+.PHONY : src/linked_list/doubly_linked_list.c.i
 
-main.s: main.c.s
+src/linked_list/doubly_linked_list.s: src/linked_list/doubly_linked_list.c.s
 
-.PHONY : main.s
+.PHONY : src/linked_list/doubly_linked_list.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/main.c.s
-.PHONY : main.c.s
+src/linked_list/doubly_linked_list.c.s:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/linked_list/doubly_linked_list.c.s
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.s
+.PHONY : src/linked_list/doubly_linked_list.c.s
+
+src/linked_list/linked_list.o: src/linked_list/linked_list.c.o
+
+.PHONY : src/linked_list/linked_list.o
+
+# target to build an object file
+src/linked_list/linked_list.c.o:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/linked_list/linked_list.c.o
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o
+.PHONY : src/linked_list/linked_list.c.o
+
+src/linked_list/linked_list.i: src/linked_list/linked_list.c.i
+
+.PHONY : src/linked_list/linked_list.i
+
+# target to preprocess a source file
+src/linked_list/linked_list.c.i:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/linked_list/linked_list.c.i
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.i
+.PHONY : src/linked_list/linked_list.c.i
+
+src/linked_list/linked_list.s: src/linked_list/linked_list.c.s
+
+.PHONY : src/linked_list/linked_list.s
+
+# target to generate assembly for a file
+src/linked_list/linked_list.c.s:
+	$(MAKE) -f CMakeFiles/Collections_Lib_Static.dir/build.make CMakeFiles/Collections_Lib_Static.dir/src/linked_list/linked_list.c.s
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.s
+.PHONY : src/linked_list/linked_list.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 test/test_doubly_linked_list.o: test/test_doubly_linked_list.c.o
 
@@ -611,40 +593,38 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... install"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... Collections_Lib_Static"
 	@echo "... edit_cache"
 	@echo "... Collections"
-	@echo "... Install_Collections"
+	@echo "... Collections_Lib_Static"
 	@echo "... Collections_Lib"
-	@echo "... common/allocator.o"
-	@echo "... common/allocator.i"
-	@echo "... common/allocator.s"
-	@echo "... common/data_handler.o"
-	@echo "... common/data_handler.i"
-	@echo "... common/data_handler.s"
-	@echo "... hash_map/hash_map.o"
-	@echo "... hash_map/hash_map.i"
-	@echo "... hash_map/hash_map.s"
-	@echo "... hash_map/int_hash_map.o"
-	@echo "... hash_map/int_hash_map.i"
-	@echo "... hash_map/int_hash_map.s"
-	@echo "... hash_map/str_hash_map.o"
-	@echo "... hash_map/str_hash_map.i"
-	@echo "... hash_map/str_hash_map.s"
-	@echo "... linked_list/doubly_linked_list.o"
-	@echo "... linked_list/doubly_linked_list.i"
-	@echo "... linked_list/doubly_linked_list.s"
-	@echo "... linked_list/linked_list.o"
-	@echo "... linked_list/linked_list.i"
-	@echo "... linked_list/linked_list.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Comparers"
+	@echo "... Comparers_Lib_Static"
+	@echo "... Comparers_Lib"
+	@echo "... src/common/allocator.o"
+	@echo "... src/common/allocator.i"
+	@echo "... src/common/allocator.s"
+	@echo "... src/common/data_handler.o"
+	@echo "... src/common/data_handler.i"
+	@echo "... src/common/data_handler.s"
+	@echo "... src/hash_map/hash_map.o"
+	@echo "... src/hash_map/hash_map.i"
+	@echo "... src/hash_map/hash_map.s"
+	@echo "... src/hash_map/int_hash_map.o"
+	@echo "... src/hash_map/int_hash_map.i"
+	@echo "... src/hash_map/int_hash_map.s"
+	@echo "... src/hash_map/str_hash_map.o"
+	@echo "... src/hash_map/str_hash_map.i"
+	@echo "... src/hash_map/str_hash_map.s"
+	@echo "... src/linked_list/doubly_linked_list.o"
+	@echo "... src/linked_list/doubly_linked_list.i"
+	@echo "... src/linked_list/doubly_linked_list.s"
+	@echo "... src/linked_list/linked_list.o"
+	@echo "... src/linked_list/linked_list.i"
+	@echo "... src/linked_list/linked_list.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... test/test_doubly_linked_list.o"
 	@echo "... test/test_doubly_linked_list.i"
 	@echo "... test/test_doubly_linked_list.s"

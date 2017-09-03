@@ -57,212 +57,212 @@ include CMakeFiles/Collections_Lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Collections_Lib.dir/flags.make
 
-CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o: CMakeFiles/Collections_Lib.dir/flags.make
-CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o: ../hash_map/hash_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/hash_map.c
+CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o: CMakeFiles/Collections_Lib.dir/flags.make
+CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o: ../src/hash_map/hash_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/hash_map.c
 
-CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/hash_map.c > CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.i
+CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/hash_map.c > CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.i
 
-CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/hash_map.c -o CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.s
+CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/hash_map.c -o CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.s
 
-CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o.requires:
+CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o.requires:
 
-.PHONY : CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o.requires
+.PHONY : CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o.requires
 
-CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o.provides: CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o.requires
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o.provides.build
-.PHONY : CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o.provides
+CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o.provides: CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o.provides.build
+.PHONY : CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o.provides
 
-CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o.provides.build: CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o
-
-
-CMakeFiles/Collections_Lib.dir/common/allocator.c.o: CMakeFiles/Collections_Lib.dir/flags.make
-CMakeFiles/Collections_Lib.dir/common/allocator.c.o: ../common/allocator.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Collections_Lib.dir/common/allocator.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/common/allocator.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/allocator.c
-
-CMakeFiles/Collections_Lib.dir/common/allocator.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/common/allocator.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/allocator.c > CMakeFiles/Collections_Lib.dir/common/allocator.c.i
-
-CMakeFiles/Collections_Lib.dir/common/allocator.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/common/allocator.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/allocator.c -o CMakeFiles/Collections_Lib.dir/common/allocator.c.s
-
-CMakeFiles/Collections_Lib.dir/common/allocator.c.o.requires:
-
-.PHONY : CMakeFiles/Collections_Lib.dir/common/allocator.c.o.requires
-
-CMakeFiles/Collections_Lib.dir/common/allocator.c.o.provides: CMakeFiles/Collections_Lib.dir/common/allocator.c.o.requires
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/common/allocator.c.o.provides.build
-.PHONY : CMakeFiles/Collections_Lib.dir/common/allocator.c.o.provides
-
-CMakeFiles/Collections_Lib.dir/common/allocator.c.o.provides.build: CMakeFiles/Collections_Lib.dir/common/allocator.c.o
+CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o.provides.build: CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o
 
 
-CMakeFiles/Collections_Lib.dir/common/data_handler.c.o: CMakeFiles/Collections_Lib.dir/flags.make
-CMakeFiles/Collections_Lib.dir/common/data_handler.c.o: ../common/data_handler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Collections_Lib.dir/common/data_handler.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/common/data_handler.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/data_handler.c
+CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o: CMakeFiles/Collections_Lib.dir/flags.make
+CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o: ../src/common/allocator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/common/allocator.c
 
-CMakeFiles/Collections_Lib.dir/common/data_handler.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/common/data_handler.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/data_handler.c > CMakeFiles/Collections_Lib.dir/common/data_handler.c.i
+CMakeFiles/Collections_Lib.dir/src/common/allocator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/src/common/allocator.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/common/allocator.c > CMakeFiles/Collections_Lib.dir/src/common/allocator.c.i
 
-CMakeFiles/Collections_Lib.dir/common/data_handler.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/common/data_handler.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/common/data_handler.c -o CMakeFiles/Collections_Lib.dir/common/data_handler.c.s
+CMakeFiles/Collections_Lib.dir/src/common/allocator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/src/common/allocator.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/common/allocator.c -o CMakeFiles/Collections_Lib.dir/src/common/allocator.c.s
 
-CMakeFiles/Collections_Lib.dir/common/data_handler.c.o.requires:
+CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o.requires:
 
-.PHONY : CMakeFiles/Collections_Lib.dir/common/data_handler.c.o.requires
+.PHONY : CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o.requires
 
-CMakeFiles/Collections_Lib.dir/common/data_handler.c.o.provides: CMakeFiles/Collections_Lib.dir/common/data_handler.c.o.requires
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/common/data_handler.c.o.provides.build
-.PHONY : CMakeFiles/Collections_Lib.dir/common/data_handler.c.o.provides
+CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o.provides: CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o.provides.build
+.PHONY : CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o.provides
 
-CMakeFiles/Collections_Lib.dir/common/data_handler.c.o.provides.build: CMakeFiles/Collections_Lib.dir/common/data_handler.c.o
-
-
-CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o: CMakeFiles/Collections_Lib.dir/flags.make
-CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o: ../linked_list/linked_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/linked_list/linked_list.c
-
-CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/linked_list/linked_list.c > CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.i
-
-CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/linked_list/linked_list.c -o CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.s
-
-CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o.requires:
-
-.PHONY : CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o.requires
-
-CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o.provides: CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o.requires
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o.provides.build
-.PHONY : CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o.provides
-
-CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o.provides.build: CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o
+CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o.provides.build: CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o
 
 
-CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o: CMakeFiles/Collections_Lib.dir/flags.make
-CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o: ../linked_list/doubly_linked_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/linked_list/doubly_linked_list.c
+CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o: CMakeFiles/Collections_Lib.dir/flags.make
+CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o: ../src/common/data_handler.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/common/data_handler.c
 
-CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/linked_list/doubly_linked_list.c > CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.i
+CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/common/data_handler.c > CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.i
 
-CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/linked_list/doubly_linked_list.c -o CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.s
+CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/common/data_handler.c -o CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.s
 
-CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o.requires:
+CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o.requires:
 
-.PHONY : CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o.requires
+.PHONY : CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o.requires
 
-CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o.provides: CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o.requires
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o.provides.build
-.PHONY : CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o.provides
+CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o.provides: CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o.provides.build
+.PHONY : CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o.provides
 
-CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o.provides.build: CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o
-
-
-CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o: CMakeFiles/Collections_Lib.dir/flags.make
-CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o: ../hash_map/str_hash_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/str_hash_map.c
-
-CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/str_hash_map.c > CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.i
-
-CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/str_hash_map.c -o CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.s
-
-CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o.requires:
-
-.PHONY : CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o.requires
-
-CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o.provides: CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o.requires
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o.provides.build
-.PHONY : CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o.provides
-
-CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o.provides.build: CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o
+CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o.provides.build: CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o
 
 
-CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o: CMakeFiles/Collections_Lib.dir/flags.make
-CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o: ../hash_map/int_hash_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/int_hash_map.c
+CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o: CMakeFiles/Collections_Lib.dir/flags.make
+CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o: ../src/linked_list/linked_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/linked_list/linked_list.c
 
-CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/int_hash_map.c > CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.i
+CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/linked_list/linked_list.c > CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.i
 
-CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/hash_map/int_hash_map.c -o CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.s
+CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/linked_list/linked_list.c -o CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.s
 
-CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o.requires:
+CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o.requires:
 
-.PHONY : CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o.requires
+.PHONY : CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o.requires
 
-CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o.provides: CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o.requires
-	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o.provides.build
-.PHONY : CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o.provides
+CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o.provides: CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o.provides.build
+.PHONY : CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o.provides
 
-CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o.provides.build: CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o
+CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o.provides.build: CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o
+
+
+CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o: CMakeFiles/Collections_Lib.dir/flags.make
+CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o: ../src/linked_list/doubly_linked_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/linked_list/doubly_linked_list.c
+
+CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/linked_list/doubly_linked_list.c > CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.i
+
+CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/linked_list/doubly_linked_list.c -o CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.s
+
+CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o.requires:
+
+.PHONY : CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o.requires
+
+CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o.provides: CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o.provides.build
+.PHONY : CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o.provides
+
+CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o.provides.build: CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o
+
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o: CMakeFiles/Collections_Lib.dir/flags.make
+CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o: ../src/hash_map/str_hash_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/str_hash_map.c
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/str_hash_map.c > CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.i
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/str_hash_map.c -o CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.s
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o.requires:
+
+.PHONY : CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o.requires
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o.provides: CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o.provides.build
+.PHONY : CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o.provides
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o.provides.build: CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o
+
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o: CMakeFiles/Collections_Lib.dir/flags.make
+CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o: ../src/hash_map/int_hash_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/int_hash_map.c
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/int_hash_map.c > CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.i
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/int_hash_map.c -o CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.s
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o.requires:
+
+.PHONY : CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o.requires
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o.provides: CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections_Lib.dir/build.make CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o.provides.build
+.PHONY : CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o.provides
+
+CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o.provides.build: CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o
 
 
 # Object files for target Collections_Lib
 Collections_Lib_OBJECTS = \
-"CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o" \
-"CMakeFiles/Collections_Lib.dir/common/allocator.c.o" \
-"CMakeFiles/Collections_Lib.dir/common/data_handler.c.o" \
-"CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o" \
-"CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o" \
-"CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o" \
-"CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o"
+"CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o" \
+"CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o" \
+"CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o" \
+"CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o" \
+"CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o" \
+"CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o" \
+"CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o"
 
 # External object files for target Collections_Lib
 Collections_Lib_EXTERNAL_OBJECTS =
 
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/common/allocator.c.o
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/common/data_handler.c.o
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/build.make
-libcollections.dylib: ../../comparers/output/unix/lib/static/libcomparers.a
-libcollections.dylib: CMakeFiles/Collections_Lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libcollections.dylib"
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/build.make
+../outputs/lib/apple/libcollections.dylib: /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.dylib
+../outputs/lib/apple/libcollections.dylib: CMakeFiles/Collections_Lib.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library ../outputs/lib/apple/libcollections.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Collections_Lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Collections_Lib.dir/build: libcollections.dylib
+CMakeFiles/Collections_Lib.dir/build: ../outputs/lib/apple/libcollections.dylib
 
 .PHONY : CMakeFiles/Collections_Lib.dir/build
 
-CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/hash_map/hash_map.c.o.requires
-CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/common/allocator.c.o.requires
-CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/common/data_handler.c.o.requires
-CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/linked_list/linked_list.c.o.requires
-CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/linked_list/doubly_linked_list.c.o.requires
-CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/hash_map/str_hash_map.c.o.requires
-CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/hash_map/int_hash_map.c.o.requires
+CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/src/hash_map/hash_map.c.o.requires
+CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/src/common/allocator.c.o.requires
+CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/src/common/data_handler.c.o.requires
+CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/src/linked_list/linked_list.c.o.requires
+CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/src/linked_list/doubly_linked_list.c.o.requires
+CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/src/hash_map/str_hash_map.c.o.requires
+CMakeFiles/Collections_Lib.dir/requires: CMakeFiles/Collections_Lib.dir/src/hash_map/int_hash_map.c.o.requires
 
 .PHONY : CMakeFiles/Collections_Lib.dir/requires
 

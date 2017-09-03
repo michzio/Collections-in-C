@@ -16,14 +16,14 @@ CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -std=c99
 
 # libraries
 # custom
-COMPARERS_LIBRARY = ../comparers/output/debug/lib/static/libcomparers.a
-UNIT_TESTS_LIBRARY = ../unit_tests/output/debug/lib/static/libunit_tests.a
+COMPARERS_LIB_DIR=../comparers/outputs/debug/lib
+COMPARERS_STATIC_LIB_PATH=$(COMPARERS_LIB_DIR)/libcomparers.a
+# executable's libraries
+UNIT_TESTS_STATIC_LIB_PATH=../unit_tests/outputs/debug/lib/libunit_tests.a
 
-# source files 
-SOURCE_FILES = hash_map.o int_hash_map.o str_hash_map.o doubly_linked_list.o linked_list.o allocator.o data_handler.o
-
-# test source files
-TEST_SOURCE_FILES = test_hash_map.o test_int_hash_map.o test_linked_list.o test_int_linked_list.o test_str_hash_map.o test_doubly_linked_list.o
+# include directories
+INCLUDE_DIRS= ./include ../comparers/include ../common/include ../unit_tests/include
+CFLAGS+= $(foreach d, $(INCLUDE_DIRS), -I$d)
 
 # the build target executable: 
 TARGET = collections
@@ -38,69 +38,79 @@ else
 	DYNAMIC_LIBRARY=
 endif
 
-# output directories 
-OUTPUT_DIR = output/debug
-OUTPUT_LIB_DIR = $(OUTPUT_DIR)/lib
-OUTPUT_STATIC_LIB_DIR = $(OUTPUT_LIB_DIR)/static
-OUTPUT_BIN_DIR = $(OUTPUT_DIR)/bin
-OUTPUT_TEST_DIR = $(OUTPUT_DIR)/test
+# source files
+SOURCE_FILES = hash_map.o int_hash_map.o str_hash_map.o doubly_linked_list.o linked_list.o allocator.o data_handler.o
+
+# test source files
+TEST_SOURCE_FILES = test_hash_map.o test_int_hash_map.o test_linked_list.o test_int_linked_list.o test_str_hash_map.o test_doubly_linked_list.o
+
+# outputs directories
+OUTPUTS_DIR = outputs/debug
+OUTPUTS_LIB_DIR = $(OUTPUTS_DIR)/lib
+OUTPUTS_BIN_DIR = $(OUTPUTS_DIR)/bin
+OUTPUTS_TEST_DIR = $(OUTPUTS_DIR)/test
 
 all: directories libraries $(TARGET)
 
-# make output directories
+# make outputs directories
 directories: 
-	@mkdir -p $(OUTPUT_DIR)
-	@mkdir -p $(OUTPUT_LIB_DIR)
-	@mkdir -p $(OUTPUT_STATIC_LIB_DIR)
-	@mkdir -p $(OUTPUT_BIN_DIR)
-	@mkdir -p $(OUTPUT_TEST_DIR)
+	@mkdir -p $(OUTPUTS_DIR)
+	@mkdir -p $(OUTPUTS_LIB_DIR)
+	@mkdir -p $(OUTPUTS_BIN_DIR)
+	@mkdir -p $(OUTPUTS_TEST_DIR)
 
-libraries: $(LIBRARY)
+libraries: $(LIBRARY) $(SHARED_LIBRARY) $(DYNAMIC_LIBRARY)
 
 $(TARGET): $(LIBRARY) $(TEST_SOURCE_FILES)  
-	$(CC) $(CFLAGS) -o $(OUTPUT_BIN_DIR)/$(TARGET) main.c $(OUTPUT_TEST_DIR)/*.o $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(COMPARERS_LIBRARY) $(UNIT_TESTS_LIBRARY)
+	$(CC) $(CFLAGS) -o $(OUTPUTS_BIN_DIR)/$(TARGET) src/main.c $(OUTPUTS_TEST_DIR)/*.o $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(COMPARERS_STATIC_LIB_PATH) $(UNIT_TESTS_STATIC_LIB_PATH)
+
+$(SHARED_LIBRARY): $(SOURCE_FILES)
+	$(CC) $(CFLAGS) -L$(COMPARERS_LIB_DIR) -shared -o $(OUTPUTS_LIB_DIR)/$(SHARED_LIBRARY) $(OUTPUTS_DIR)/*.o -lcomparers
+
+$(DYNAMIC_LIBRARY): $(SOURCE_FILES)
+	$(CC) $(CFLAGS) -L$(COMPARERS_LIB_DIR) -dynamiclib -o $(OUTPUTS_LIB_DIR)/$(DYNAMIC_LIBRARY) $(OUTPUTS_DIR)/*.o -lcomparers
 
 $(LIBRARY): $(SOURCE_FILES)
-	$(AR) $(OUTPUT_STATIC_LIB_DIR)/$(LIBRARY) $(OUTPUT_DIR)/*.o
+	$(AR) $(OUTPUTS_LIB_DIR)/$(LIBRARY) $(OUTPUTS_DIR)/*.o
 
-hash_map.o: hash_map/hash_map.c hash_map/hash_map.h
-	$(CC) $(CFLAGS) -c hash_map/hash_map.c -o $(OUTPUT_DIR)/hash_map.o
+hash_map.o: src/hash_map/hash_map.c include/hash_map/hash_map.h
+	$(CC) $(CFLAGS) -c src/hash_map/hash_map.c -o $(OUTPUTS_DIR)/hash_map.o
 
-int_hash_map.o: hash_map/int_hash_map.c hash_map/int_hash_map.h 
-	$(CC) $(CFLAGS) -c hash_map/int_hash_map.c -o $(OUTPUT_DIR)/int_hash_map.o
+int_hash_map.o: src/hash_map/int_hash_map.c include/hash_map/int_hash_map.h
+	$(CC) $(CFLAGS) -c src/hash_map/int_hash_map.c -o $(OUTPUTS_DIR)/int_hash_map.o
 
-str_hash_map.o: hash_map/str_hash_map.c hash_map/str_hash_map.h 
-	$(CC) $(CFLAGS) -c hash_map/str_hash_map.c -o $(OUTPUT_DIR)/str_hash_map.o
+str_hash_map.o: src/hash_map/str_hash_map.c include/hash_map/str_hash_map.h
+	$(CC) $(CFLAGS) -c src/hash_map/str_hash_map.c -o $(OUTPUTS_DIR)/str_hash_map.o
 
-doubly_linked_list.o: linked_list/doubly_linked_list.c linked_list/doubly_linked_list.h 
-	$(CC) $(CFLAGS) -c linked_list/doubly_linked_list.c -o $(OUTPUT_DIR)/doubly_linked_list.o
+doubly_linked_list.o: src/linked_list/doubly_linked_list.c include/linked_list/doubly_linked_list.h
+	$(CC) $(CFLAGS) -c src/linked_list/doubly_linked_list.c -o $(OUTPUTS_DIR)/doubly_linked_list.o
 
-linked_list.o: linked_list/linked_list.c linked_list/linked_list.h 
-	$(CC) $(CFLAGS) -c linked_list/linked_list.c -o $(OUTPUT_DIR)/linked_list.o
+linked_list.o: src/linked_list/linked_list.c include/linked_list/linked_list.h
+	$(CC) $(CFLAGS) -c src/linked_list/linked_list.c -o $(OUTPUTS_DIR)/linked_list.o
 
-allocator.o: common/allocator.c common/allocator.h
-	$(CC) $(CFLAGS) -c common/allocator.c -o $(OUTPUT_DIR)/allocator.o
+allocator.o: src/common/allocator.c include/common/allocator.h
+	$(CC) $(CFLAGS) -c src/common/allocator.c -o $(OUTPUTS_DIR)/allocator.o
 
-data_handler.o: common/data_handler.c common/data_handler.h
-	$(CC) $(CFLAGS) -c common/data_handler.c -o $(OUTPUT_DIR)/data_handler.o
+data_handler.o: src/common/data_handler.c include/common/data_handler.h
+	$(CC) $(CFLAGS) -c src/common/data_handler.c -o $(OUTPUTS_DIR)/data_handler.o
 
 test_hash_map.o: test/test_hash_map.c test/test_hash_map.h 
-	$(CC) $(CFLAGS) -c test/test_hash_map.c -o $(OUTPUT_TEST_DIR)/test_hash_map.o
+	$(CC) $(CFLAGS) -c test/test_hash_map.c -o $(OUTPUTS_TEST_DIR)/test_hash_map.o
 
 test_int_hash_map.o: test/test_int_hash_map.c test/test_int_hash_map.h
-	$(CC) $(CFLAGS) -c test/test_int_hash_map.c -o $(OUTPUT_TEST_DIR)/test_int_hash_map.o
+	$(CC) $(CFLAGS) -c test/test_int_hash_map.c -o $(OUTPUTS_TEST_DIR)/test_int_hash_map.o
 
 test_linked_list.o: test/test_linked_list.c test/test_linked_list.h
-	$(CC) $(CFLAGS) -c test/test_linked_list.c -o $(OUTPUT_TEST_DIR)/test_linked_list.o
+	$(CC) $(CFLAGS) -c test/test_linked_list.c -o $(OUTPUTS_TEST_DIR)/test_linked_list.o
 
 test_int_linked_list.o: test/test_int_linked_list.c test/test_int_linked_list.h
-	$(CC) $(CFLAGS) -c test/test_int_linked_list.c -o $(OUTPUT_TEST_DIR)/test_int_linked_list.o
+	$(CC) $(CFLAGS) -c test/test_int_linked_list.c -o $(OUTPUTS_TEST_DIR)/test_int_linked_list.o
 
 test_str_hash_map.o: test/test_str_hash_map.c test/test_str_hash_map.h 
-	$(CC) $(CFLAGS) -c test/test_str_hash_map.c -o $(OUTPUT_TEST_DIR)/test_str_hash_map.o
+	$(CC) $(CFLAGS) -c test/test_str_hash_map.c -o $(OUTPUTS_TEST_DIR)/test_str_hash_map.o
 
 test_doubly_linked_list.o: test/test_doubly_linked_list.c test/test_doubly_linked_list.h
-	$(CC) $(CFLAGS) -c test/test_doubly_linked_list.c -o $(OUTPUT_TEST_DIR)/test_doubly_linked_list.o
+	$(CC) $(CFLAGS) -c test/test_doubly_linked_list.c -o $(OUTPUTS_TEST_DIR)/test_doubly_linked_list.o
 
 clean: 
-	$(RM) -rf $(OUTPUT_DIR)
+	$(RM) -rf $(OUTPUTS_DIR)

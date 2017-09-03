@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Collections.dir/main.c.o"
+  "CMakeFiles/Collections.dir/src/main.c.o"
   "CMakeFiles/Collections.dir/test/test_hash_map.c.o"
   "CMakeFiles/Collections.dir/test/test_linked_list.c.o"
   "CMakeFiles/Collections.dir/test/test_int_linked_list.c.o"
   "CMakeFiles/Collections.dir/test/test_int_hash_map.c.o"
   "CMakeFiles/Collections.dir/test/test_str_hash_map.c.o"
   "CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o"
-  "collections.pdb"
-  "collections"
+  "../outputs/bin/apple/collections.pdb"
+  "../outputs/bin/apple/collections"
 )
 
 # Per-language clean rules from dependency scanning.

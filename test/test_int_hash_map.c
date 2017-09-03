@@ -5,8 +5,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include "test_int_hash_map.h"
-#include "../hash_map/int_hash_map.h"
-#include "../../unit_tests/test/assertion.h"
+#include "hash_map/int_hash_map.h"
+#include "test/assertion.h"
 
 static int_hash_map_t *int_hash_map;
 

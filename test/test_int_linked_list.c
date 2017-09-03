@@ -4,9 +4,9 @@
 
 #include <stdlib.h>
 #include "test_int_linked_list.h"
-#include "../common/data_handler.h"
-#include "../linked_list/linked_list.h"
-#include "../../unit_tests/test/assertion.h"
+#include "common/data_handler.h"
+#include "linked_list/linked_list.h"
+#include "test/assertion.h"
 
 static linked_list_t *list;
 

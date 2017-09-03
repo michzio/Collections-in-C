@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Collections"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\system\;CMake Files\..\system\OS_X\;CMake Files\..\system\OS_X\automation_scripts\;CMake Files\..\system\OS_X\cocoa_helper\;CMake Files\..\system\OS_X\keyboard_events\;CMake Files\..\system\OS_X\mouse_events\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\..\common\;CMake Files\..\libpng-1.6.24\;CMake Files\..\zlib-1.2.8\;CMake Files\..\collections\;CMake Files\..\comparers\;CMake Files\..\concurrency\;CMake Files\..\networking\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Collections">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/bin/apple/collections" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/bin/apple"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../comparers/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../common/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../unit_tests/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 Collections"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Collections/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/bin/apple/collections" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/bin/apple"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../comparers/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../common/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../unit_tests/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 Collections/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Collections_Lib_Static">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/lib/apple/libcollections.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../comparers/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../common/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../unit_tests/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 Collections_Lib_Static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Collections_Lib_Static/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/lib/apple/libcollections.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../comparers/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../common/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../unit_tests/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 Collections_Lib_Static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Collections_Lib">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/lib/apple/libcollections.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../comparers/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../common/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../unit_tests/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 Collections_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Collections_Lib/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/lib/apple/libcollections.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../comparers/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../common/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/../unit_tests/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 Collections_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Comparers">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/bin/apple/comparers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/bin/apple"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 Comparers"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Comparers/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/bin/apple/comparers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/bin/apple"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 Comparers/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Comparers_Lib_Static">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 Comparers_Lib_Static"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Comparers_Lib_Static/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 Comparers_Lib_Static/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Comparers_Lib">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 Comparers_Lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Comparers_Lib/fast">
+				<Option output="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/concurrency/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include"/>
+					<Add directory="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 Comparers_Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include/common/allocator.h">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include/common/data_handler.h">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include/hash_map/hash_map.h">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include/hash_map/int_hash_map.h">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include/hash_map/str_hash_map.h">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include/linked_list/doubly_linked_list.h">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/include/linked_list/linked_list.h">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/common/allocator.c">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/common/data_handler.c">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/hash_map.c">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/int_hash_map.c">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/hash_map/str_hash_map.c">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/linked_list/doubly_linked_list.c">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/linked_list/linked_list.c">
+			<Option target="Collections_Lib_Static"/>
+			<Option target="Collections_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/main.c">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_doubly_linked_list.c">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_doubly_linked_list.h">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_hash_map.c">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_hash_map.h">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_hash_map.c">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_hash_map.h">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.c">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_int_linked_list.h">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_linked_list.c">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_linked_list.h">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_str_hash_map.c">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/test/test_str_hash_map.h">
+			<Option target="Collections"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/include/comparer.h">
+			<Option target="Comparers_Lib_Static"/>
+			<Option target="Comparers_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/comparer.c">
+			<Option target="Comparers_Lib_Static"/>
+			<Option target="Comparers_Lib"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/src/main.c">
+			<Option target="Comparers"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/automation_scripts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\automation_scripts\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/automation_scripts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\automation_scripts\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/automation_scripts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\automation_scripts\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/cocoa_helper/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\cocoa_helper\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/cocoa_helper/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\cocoa_helper\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/cocoa_helper/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\cocoa_helper\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/cocoa_helper/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\cocoa_helper\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/keyboard_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\keyboard_events\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/keyboard_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\keyboard_events\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/mouse_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\mouse_events\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../system/OS_X/mouse_events/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\system\OS_X\mouse_events\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\common\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\common\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\common\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\common\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\common\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../libpng-1.6.24/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\libpng-1.6.24\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../libpng-1.6.24/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\libpng-1.6.24\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../libpng-1.6.24/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\libpng-1.6.24\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../libpng-1.6.24/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\libpng-1.6.24\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../libpng-1.6.24/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\libpng-1.6.24\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../libpng-1.6.24/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\libpng-1.6.24\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../zlib-1.2.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\zlib-1.2.8\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../zlib-1.2.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\zlib-1.2.8\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../zlib-1.2.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\zlib-1.2.8\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../zlib-1.2.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\zlib-1.2.8\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../zlib-1.2.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\zlib-1.2.8\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../zlib-1.2.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\zlib-1.2.8\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../zlib-1.2.8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\zlib-1.2.8\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../collections/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\collections\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../collections/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\collections\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../collections/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\collections\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../comparers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\comparers\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../comparers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\comparers\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../comparers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\comparers\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../comparers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\comparers\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../concurrency/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\concurrency\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../concurrency/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\concurrency\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../networking/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\networking\"/>
+		</Unit>
+		<Unit filename="/Users/michzio/Developer/MyProjects/BachelorDegree/c/server/../networking/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\networking\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

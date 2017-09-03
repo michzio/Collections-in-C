@@ -33,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.7.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeSystem.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -44,12 +45,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Collections_Lib_Static.dir/DependInfo.cmake"
   "CMakeFiles/Collections.dir/DependInfo.cmake"
-  "CMakeFiles/Install_Collections.dir/DependInfo.cmake"
+  "CMakeFiles/Collections_Lib_Static.dir/DependInfo.cmake"
   "CMakeFiles/Collections_Lib.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib_Static.dir/DependInfo.cmake"
+  "/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib.dir/DependInfo.cmake"
   )

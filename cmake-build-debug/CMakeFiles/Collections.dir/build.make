@@ -57,28 +57,28 @@ include CMakeFiles/Collections.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Collections.dir/flags.make
 
-CMakeFiles/Collections.dir/main.c.o: CMakeFiles/Collections.dir/flags.make
-CMakeFiles/Collections.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Collections.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections.dir/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/main.c
+CMakeFiles/Collections.dir/src/main.c.o: CMakeFiles/Collections.dir/flags.make
+CMakeFiles/Collections.dir/src/main.c.o: ../src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Collections.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Collections.dir/src/main.c.o   -c /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/main.c
 
-CMakeFiles/Collections.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/main.c > CMakeFiles/Collections.dir/main.c.i
+CMakeFiles/Collections.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Collections.dir/src/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/main.c > CMakeFiles/Collections.dir/src/main.c.i
 
-CMakeFiles/Collections.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/main.c -o CMakeFiles/Collections.dir/main.c.s
+CMakeFiles/Collections.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Collections.dir/src/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/src/main.c -o CMakeFiles/Collections.dir/src/main.c.s
 
-CMakeFiles/Collections.dir/main.c.o.requires:
+CMakeFiles/Collections.dir/src/main.c.o.requires:
 
-.PHONY : CMakeFiles/Collections.dir/main.c.o.requires
+.PHONY : CMakeFiles/Collections.dir/src/main.c.o.requires
 
-CMakeFiles/Collections.dir/main.c.o.provides: CMakeFiles/Collections.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Collections.dir/main.c.o.provides
+CMakeFiles/Collections.dir/src/main.c.o.provides: CMakeFiles/Collections.dir/src/main.c.o.requires
+	$(MAKE) -f CMakeFiles/Collections.dir/build.make CMakeFiles/Collections.dir/src/main.c.o.provides.build
+.PHONY : CMakeFiles/Collections.dir/src/main.c.o.provides
 
-CMakeFiles/Collections.dir/main.c.o.provides.build: CMakeFiles/Collections.dir/main.c.o
+CMakeFiles/Collections.dir/src/main.c.o.provides.build: CMakeFiles/Collections.dir/src/main.c.o
 
 
 CMakeFiles/Collections.dir/test/test_hash_map.c.o: CMakeFiles/Collections.dir/flags.make
@@ -227,7 +227,7 @@ CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o.provides.build: CMak
 
 # Object files for target Collections
 Collections_OBJECTS = \
-"CMakeFiles/Collections.dir/main.c.o" \
+"CMakeFiles/Collections.dir/src/main.c.o" \
 "CMakeFiles/Collections.dir/test/test_hash_map.c.o" \
 "CMakeFiles/Collections.dir/test/test_linked_list.c.o" \
 "CMakeFiles/Collections.dir/test/test_int_linked_list.c.o" \
@@ -238,27 +238,27 @@ Collections_OBJECTS = \
 # External object files for target Collections
 Collections_EXTERNAL_OBJECTS =
 
-collections: CMakeFiles/Collections.dir/main.c.o
-collections: CMakeFiles/Collections.dir/test/test_hash_map.c.o
-collections: CMakeFiles/Collections.dir/test/test_linked_list.c.o
-collections: CMakeFiles/Collections.dir/test/test_int_linked_list.c.o
-collections: CMakeFiles/Collections.dir/test/test_int_hash_map.c.o
-collections: CMakeFiles/Collections.dir/test/test_str_hash_map.c.o
-collections: CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o
-collections: CMakeFiles/Collections.dir/build.make
-collections: libcollections.a
-collections: ../../unit_tests/output/unix/lib/static/libunit_tests.a
-collections: ../../comparers/output/unix/lib/static/libcomparers.a
-collections: CMakeFiles/Collections.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable collections"
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/src/main.c.o
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/test/test_hash_map.c.o
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/test/test_linked_list.c.o
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/test/test_int_linked_list.c.o
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/test/test_int_hash_map.c.o
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/test/test_str_hash_map.c.o
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/test/test_doubly_linked_list.c.o
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/build.make
+../outputs/bin/apple/collections: ../outputs/lib/apple/libcollections.dylib
+../outputs/bin/apple/collections: ../../unit_tests/outputs/lib/apple/libunit_tests.dylib
+../outputs/bin/apple/collections: /Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/lib/apple/libcomparers.dylib
+../outputs/bin/apple/collections: CMakeFiles/Collections.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable ../outputs/bin/apple/collections"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Collections.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Collections.dir/build: collections
+CMakeFiles/Collections.dir/build: ../outputs/bin/apple/collections
 
 .PHONY : CMakeFiles/Collections.dir/build
 
-CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/main.c.o.requires
+CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/src/main.c.o.requires
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_hash_map.c.o.requires
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_linked_list.c.o.requires
 CMakeFiles/Collections.dir/requires: CMakeFiles/Collections.dir/test/test_int_linked_list.c.o.requires

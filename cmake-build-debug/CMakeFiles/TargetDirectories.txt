@@ -1,10 +1,10 @@
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/install/local.dir
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/install/strip.dir
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/install.dir
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/list_install_components.dir
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/Collections_Lib_Static.dir
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/Collections.dir
-/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/Install_Collections.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/Collections_Lib_Static.dir
 /Users/michzio/Developer/MyProjects/BachelorDegree/c/collections/cmake-build-debug/CMakeFiles/Collections_Lib.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/rebuild_cache.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/edit_cache.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib_Static.dir
+/Users/michzio/Developer/MyProjects/BachelorDegree/c/comparers/outputs/CMakeFiles/Comparers_Lib.dir
